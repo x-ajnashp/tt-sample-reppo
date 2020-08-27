@@ -1,0 +1,15 @@
+
+.col-6 {
+    width: 50%;
+    display: grid;
+    margin-bottom: 10px;
+}
+
+.col-6 input {
+    width: 70%;
+    height: 25px;
+}
+
+.text-danger {
+    color: red;
+}

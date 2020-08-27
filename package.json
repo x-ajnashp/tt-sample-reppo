@@ -20,7 +20,11 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
+    "@govtechsg/open-attestation": "^3.11.2",
+    "@govtechsg/token-registry": "^2.1.0",
+    "@metamask/detect-provider": "^1.1.0",
     "core-js": "^2.5.4",
+    "ethers": "^5.0.9",
     "rxjs": "6.0.0",
     "zone.js": "~0.8.26"
   },
@@ -31,7 +35,7 @@
     "@angular/language-service": "^6.1.0",
     "@types/jasmine": "~2.8.6",
     "@types/jasminewd2": "~2.0.3",
-    "@types/node": "~8.9.4",
+    "@types/node": "9.4.7",
     "codelyzer": "~4.2.1",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
@@ -43,6 +47,6 @@
     "protractor": "~5.3.0",
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
-    "typescript": "~2.7.2"
+    "typescript": "~2.9.2"
   }
 }
