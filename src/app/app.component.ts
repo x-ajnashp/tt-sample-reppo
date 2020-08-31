@@ -98,10 +98,13 @@ export class AppComponent {
 	}
 
 	async issueDocument() {
+		const gasPrice = await this.signer.provider.getGasPrice();
 		const connectedErc721 = await TradeTrustErc721Factory.connect(this.formData.tokenRegistryAddress, this.signer);
 		const merkleRoot = '0xf21e6b5f637f44026410ab3a47384567abc3097b39b58d830950dfec2d8638b9';
-		const issueData = await connectedErc721["safeMint(address,uint256)"](this.escrowTitleInstance.address, merkleRoot, {});
+		const issueData = await connectedErc721["safeMint(address,uint256)"](this.escrowTitleInstance.address, merkleRoot, { gasPrice: gasPrice.mul(1) });
 		console.log('======= issueData===');
 		console.log(issueData);
+		const waitResp = issueData.wait();
+		console.log('======= issueData===', waitResp);
 	}
 }
