@@ -35,9 +35,17 @@
           <input type="text" [(ngModel)]="formData.holderAddress" name="holderAddress">
         </div>
         <div>
-          <button type="button" (click)="enableEthereum()">Submit</button>
+          <button type="button" (click)="titleEscrow()">Submit</button>
         </div>
+        <div class="token-reg-info-container">
+          <button type="button" (click)="tokenReg()">Create new token registry</button>
+          <div *ngIf="tokenRegistry && tokenRegistry.address">
+            <h3>New Token Registry Address:</h3>
+            <div>{{tokenRegistry.address}}</div>
+          </div>
+        </div>        
       </div>
+      
   </div>
 </div>
 

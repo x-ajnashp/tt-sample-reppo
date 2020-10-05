@@ -13,3 +13,9 @@
 .text-danger {
     color: red;
 }
+
+.token-reg-info-container {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid;
+}
